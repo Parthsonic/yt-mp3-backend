@@ -186,7 +186,7 @@ def process_convert(file_id, url, bitrate):
             "outtmpl": f"{base_path}.%(ext)s",
             "noplaylist": True,
             "progress_hooks": [progress_hook],
-            "cookiesfrombrowser": ("chrome",),
+            # "cookiesfrombrowser": ("chrome",),
         }
 
         with YoutubeDL(ydl_opts) as ydl:
